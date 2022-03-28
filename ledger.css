@@ -8,31 +8,34 @@ html{
 }
 h1{
     font-size: 30px;
+    color: #f9dc5cff;
 }
 
 #head-container{
-    display: flex;
     position: sticky;
-    top: 0;
-    background-color:#333;
-    justify-content:space-between;
     z-index: 1;
-    padding: 1rem;
+    background-color:#333;
+    overflow: auto;
+
+}
+#head-container h1{
+    float: left;
+    padding-top: 20px;
 }
 #head-container ul{
+    float: right;
     text-decoration: none;
-    display: flex;
-    list-style: none;
-    align-items: center;}
+    list-style: none;}
 #head-container ul li{
-    padding: 1rem 0.5rem ;
+    float: left;
 }
-
 #head-container ul li a{
 color:white;
+display: block;
 text-decoration: none;
-padding: 0.75rem;
-margin: 3rem 0.25rem;
+text-align: center;
+margin: 20px;
+padding: 15px;
 background-color:  #f9dc5cff;}
 
 #head-container ul li a:hover{
@@ -40,16 +43,18 @@ background-color:  #f9dc5cff;}
     border-radius: 5px;
 }
 #section-1{
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: url('./img/main\ \(3\).jpg') no-repeat center center/cover ;
-    height:90vh;
+    height:100vh;
     color: cornsilk;
     padding: 2rem;
-    padding-top: 15rem;
 
+}
+#section-1 img{
+   border-radius: 500px;
+   max-height: 30vh;
 }
 p{  margin-top: 10px;
     font-size: 30px;
@@ -91,8 +96,8 @@ justify-content:center;}
     text-align: center;
     padding: 2rem 0;
 }
-.working-at{
-    background-color: red;
+#working-at{
+background-color: red;
     min-height: 300px;
     display: flex;
 flex-direction: column;
@@ -110,7 +115,7 @@ h4{
 }
 .place-of-work{
  background-color: #f9dc5cff;
-color: black;
+  color: black;
     padding: 10px;
     margin: 4px;
     border-radius: 29px;
@@ -162,7 +167,7 @@ h4{
     font-size: 20px;
 }
 .stack::-webkit-progress-bar{
-background-color: white;
+background-color: green;
 border-radius: 100px;
 }
 .stack::-webkit-progress-value{
